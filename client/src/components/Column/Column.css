@@ -1,0 +1,111 @@
+.board-column {
+  background-color: var(--column-bg, #f8fafc);
+  border-radius: 10px;
+  border: 2px solid var(--border-color, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  max-width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+  max-height: calc(100vh - 180px);
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.board-column.is-drag-over {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.board-column__header {
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color, #e2e8f0);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px 8px 0 0;
+}
+
+.board-column__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary, #0f172a);
+}
+
+.board-column__count {
+  background-color: #e2e8f0;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+.board-column__content {
+  padding: 12px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-column__task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.board-column__empty {
+  padding: 32px 16px;
+  text-align: center;
+  color: var(--text-muted, #94a3b8);
+  font-size: 13px;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px dashed #cbd5e1;
+  border-radius: 6px;
+  margin: auto 0;
+}
+
+.board-column__footer {
+  padding: 10px 12px;
+  border-top: 1px solid var(--border-color, #e2e8f0);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 8px 8px;
+}
+
+.board-column__add-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+  border: 1px dashed var(--border-color, #cbd5e1);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary, #475569);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.board-column__add-btn:hover:not(:disabled) {
+  background-color: #ffffff;
+  border-color: #3b82f6;
+  color: #2563eb;
+}
+
+.board-column__add-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.board-column__add-icon {
+  font-size: 16px;
+  line-height: 1;
+}
