@@ -7,7 +7,7 @@ TaskFlow is a lightweight, responsive task management board designed for small t
 ## 🔗 Live Demo
 
 - **Frontend Application (Vercel)**: [https://taskflow-by-gk.vercel.app](https://taskflow-by-gk.vercel.app)
-- **Backend API (Render)**: [https://taskflow-backend-8rhn.onrender.com](https://taskflow-backend-8rhn.onrender.com)
+- **Backend API (Render)**: [https://task-to-do-3yw8.onrender.com](https://task-to-do-3yw8.onrender.com)
 - **GitHub Repository**: [https://github.com/CodeKingPrince/Task-to-do](https://github.com/CodeKingPrince/Task-to-do)
 
 ---
@@ -345,12 +345,12 @@ All endpoints return predictable JSON structures: `{ success: true, data: ... }`
    - `NODE_ENV`: `production`
    - `CLIENT_URL`: `https://taskflow-by-gk.vercel.app`
    - `DATABASE_PATH`: `./database/taskflow.db`
-6. Verify deployment by visiting `https://taskflow-backend-8rhn.onrender.com/api/health`.
+6. Verify deployment by visiting `https://task-to-do-3yw8.onrender.com/api/health`.
 
 ### Frontend Deployment (Vercel)
 1. Import the repository into Vercel.
 2. Set **Root Directory** to `client`.
 3. Set **Framework Preset** to `Vite`.
 4. Add Environment Variable:
-   - `VITE_API_URL`: `https://taskflow-backend-8rhn.onrender.com/api`
+   - `VITE_API_URL`: `https://task-to-do-3yw8.onrender.com/api`
 5. Deploy and verify that the live board communicates with the Render backend.
